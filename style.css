@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #F5F5FB;
+  justify-content: space-between;
+}
+body > .sidebar-lx {
+  width: 200px;
+  height: 100vw;
+  background-color: #FFFFFF;
+}
+body > .sidebar-lx > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-block: 30px;
+}
+body > .sidebar-lx > span > .square, body > .sidebar-lx > span > .rectangle {
+  height: 30px;
+  width: 30px;
+  background-color: #C4C4C4;
+}
+body > .sidebar-lx > span > .rectangle {
+  width: 120px;
+}
+body > .sidebar-lx > .list {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body > .sidebar-lx > .list > div {
+  align-self: center;
+  width: 160px;
+  height: 20px;
+  background-color: #C4C4C4;
+}
+body > .sidebar-lx > .footer {
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 8px;
+  background-color: #C4C4C4;
+}
+body > .sidebar-rx {
+  width: 250px;
+  height: 100vw;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

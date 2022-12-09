@@ -1,0 +1,62 @@
+@use "./root.scss" as var;
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: var.$body-bg;
+    justify-content: space-between;
+
+    & > .sidebar-lx{
+        width: var.$side-l-w;
+        height: 100vw;
+        background-color: var.$side-bg;
+        & > span {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-block: 30px;
+            & > .square {
+                height: 30px;
+                width: 30px;
+                background-color: var.$box-bg;
+            }
+    
+            & > .rectangle {
+                @extend .square;
+                width: 120px;
+            }
+        }
+
+        & > .list {
+            margin-top: var.$box-gap;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var.$box-gap;
+            & > div {
+                align-self: center;
+                width: 160px;
+                height: 20px;
+                background-color: var.$box-bg;
+            }
+        }
+
+        & > .footer {
+            position: absolute;
+            width: 160px;
+            height: 180px;
+            left: 20px;
+            bottom: 30px;
+            border-radius: 8px;
+            background-color: var.$box-bg;
+        }
+    }
+
+    & > .sidebar-rx{
+        width: var.$side-r-w;
+        height: 100vw;
+        background-color: var.$side-bg;
+    }
+}
+
